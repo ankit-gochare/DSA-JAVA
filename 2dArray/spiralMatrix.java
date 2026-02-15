@@ -62,20 +62,18 @@ public class spiralMatrix {
                 System.out.print(matrix[j][endCol]+" ");
             }
 
-            // bottom
-            for(int k = endCol-1 ;k>=startCol ;k--){
-                if(startCol == endCol){
-                    return;
+             // bottom
+            if(startRow < endRow){
+                for(int i = endCol - 1; i >= startCol; i--){
+                    System.out.print(matrix[endRow][i]);
                 }
-                System.out.print(matrix[endRow][k]+" ");
             }
 
             // left
-            for(int l = endRow-1;l>startRow;l--){
-                if(startRow == endRow){
-                    return;
+            if(startCol < endCol){
+                for(int i = endRow - 1; i > startRow; i--){
+                    System.out.print(matrix[i][startCol]);
                 }
-                System.out.print(matrix[l][startCol]+" ");
             }
 
             startCol++;
