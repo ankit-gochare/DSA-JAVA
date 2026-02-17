@@ -61,7 +61,7 @@ public class Array2d {
         // search2D(matrix, 5);
         // search2D(matrix, 10);
 
-        spiralMatrixPrint(matrix);
+        // spiralMatrixPrint(matrix);
          
     }
 }
