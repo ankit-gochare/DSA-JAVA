@@ -16,6 +16,7 @@ public class GetIthBit {
     // if 0 return 0
     // else return 1
 
+
     public static int getIthBit(int num , int i){
         int bitmask = 1<<i;
 
@@ -30,3 +31,4 @@ public class GetIthBit {
         System.out.println(getIthBit(1100, 3));
     }
 }
+ 
