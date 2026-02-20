@@ -1,4 +1,4 @@
-`       public class ShortestPath {
+       public class ShortestPath {
     // given a route containing four directions NEWS find the shortest path to reach destination
     // WNEENESENNN
 
