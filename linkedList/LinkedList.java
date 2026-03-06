@@ -13,6 +13,9 @@ public class LinkedList{
     public static Node head;
     public static Node tail;
 
+    // to calculate size along with insertion
+    public static int size = 0;
+
     // 1. Add at the first place 
     // to add a element at the first index 
     // head
@@ -25,6 +28,8 @@ public class LinkedList{
     public void addFirst(int data){
         // step-1 : create new node
         Node newNode = new Node(data);
+        // to calculate size along with insertion
+        size++;
 
         // empty list
         if(head == null){
@@ -53,6 +58,9 @@ public class LinkedList{
         // step1 : create a new node
         Node newNode = new Node(data);
 
+        // to calculate size along with insertion
+        size++;
+
         // if empty list
         if(head == null){
             head = tail = newNode;
@@ -72,6 +80,9 @@ public class LinkedList{
     public void add (int index , int data){
         // create a new node
         Node newNode = new Node(data);
+
+        // to calculate size along with insertion
+        size++;
         
         // empty list
         if(head == null){
@@ -148,11 +159,14 @@ public class LinkedList{
         System.out.println(ll.tail.data);
 
         printList(ll);
+        System.out.println(size);
 
         ll.add(3,30);
         printList(ll);
+        System.out.println(size);
         ll.add(3,23);
         printList(ll);
+        System.out.println(size);
         
     }
 }
