@@ -118,7 +118,7 @@ public class LinkedList{
     // 3. temp = temp.next
     // repeat this 3 steps till temp!=null
 
-    public static void printList(LinkedList ll){
+    public void printList(){
 
         // emty Linked List
         if(head == null){
@@ -158,14 +158,14 @@ public class LinkedList{
         ll.addLast(6);
         System.out.println(ll.tail.data);
 
-        printList(ll);
+        ll.printList();
         System.out.println(size);
 
         ll.add(3,30);
-        printList(ll);
+        ll.printList();
         System.out.println(size);
         ll.add(3,23);
-        printList(ll);
+        ll.printList();
         System.out.println(size);
         
     }
