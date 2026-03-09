@@ -24,7 +24,7 @@ public class ReverseStack{
 
     // approach 2 
     // using recursion 
-    // to reduca the space complexity
+    // to reduca the space complexity to 0(1)
     
     // first empty the stack 
     // then pushAtBottom
