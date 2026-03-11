@@ -1,6 +1,6 @@
 public class QueueLL{
 
-    // Queue implementation usind Linked list
+    // Queue implementation using Linked list
     static class Node{
         int data;
         Node next;
