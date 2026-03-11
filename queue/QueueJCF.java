@@ -4,6 +4,8 @@ import java.util.Queue;
 
 public class QueueJCF{
     public static void main(String[] args){
+
+        // Queue uising Java collection framework
         Queue<Integer> q1 = new LinkedList<>();
         q1.add(1);
         q1.add(2);
